@@ -3,7 +3,7 @@ import java.util.Scanner; // import the Scanner class
 public class Main {
 
    public static void main(String []args) {
-      System.out.println("Testing methods that RETURN values...");
+      //System.out.println("Testing methods that RETURN values...");
 
       // Construct a Scanner object
       // note: System.in() is the computer's keyboard!
@@ -23,5 +23,23 @@ public class Main {
       // Use values in an expression
       int sum = inputInt + inputDouble;
       
+      // *** STRING CLASS ***
+      // Original way of constructing a String object
+      String message = new String("APCS is awesome!");
+      // Shortcut (common) way of creating a String
+      String greeting = "Hello coders!"; // text in quotes is a "String Literal"
+
+      // Concatenate (combine) two or more String objects
+      String concatenated = greeting + message; 
+      System.out.println(concatenated);
+      System.out.println(greeting + " " + message);
+      // can combine String variables AND "String literals"
+
+      // Numbers get converted to a String 
+      System.out.println("I am " + 28 + " years old");
+      System.out.println("12" + 4 + 3); // 1243
+      System.out.println("12" + (4 + 3)); // 127
+      System.out.println(("12") + 4 + 3); // 1243
+      System.out.println(12 + 4 + 3); // NOT concatenation, just addition
    }
 }
